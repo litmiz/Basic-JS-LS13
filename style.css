@@ -11,11 +11,17 @@ h2 {
     text-decoration: underline;
 }
 
+button {
+    display: block;
+    margin: 15px auto;
+}
+
 #ex1 {
     background-color: lightpink;
 }
 
-#ex1 button {
-    display: block;
-    margin: 15px auto;
+#ex2 {
+    background-color: lightsalmon;
 }
+
+
