@@ -76,3 +76,15 @@ function ex4(stuNum) {
      }
     document.getElementById('calcmsg').textContent = `כמות החובשים שצריך היא ${medic}, כמות המאבטחים שצריך היא ${guard} וכמות ערכות העזרה ראשונה היא ${firstAidKit}`;
 }
+
+// Ex5
+
+document.getElementById('minBtn').addEventListener('click', function () {
+    ex5(Number(document.getElementById('minNum').value));
+})
+
+function ex5(minNum) {
+    var hours = Math.floor(minNum / 60);
+    var mins = minNum % 60;
+    document.getElementById('minMsg').textContent = `מספר השעות הוא ${hours}. מספר הדקות הוא ${mins}.`;
+}
