@@ -1,3 +1,5 @@
+// Ex1
+
 document.getElementById('logButt').addEventListener('click', function () {
     ex1(document.getElementById('userLog').value, document.getElementById('passLog').value);
 })
@@ -11,6 +13,8 @@ function ex1(userName, password) {
     }
 }
 
+// Ex2
+
 document.getElementById('namesBtn').addEventListener('click', function () {
     ex2();
 })
@@ -23,6 +27,8 @@ function ex2() {
         console.log(names[i]);
     }
 }
+
+// Ex3
 
 document.getElementById('threeBtn').addEventListener('click', function () {
     ex3(3);
@@ -47,5 +53,26 @@ function ex3(divBy) {
             document.getElementById('numMsg').textContent += nums[i] + ', ';
         }
     }
+}
 
+// Ex4
+
+document.getElementById('calcBtn').addEventListener('click', function () {
+    ex4(Number(document.getElementById('stuNum').value));
+})
+
+function ex4(stuNum) {
+     var firstAidKit = Math.floor(stuNum / 30);
+     if(stuNum % 30 > 0) {
+         firstAidKit++;
+     }
+     var guard = Math.floor(stuNum / 50);
+     if(stuNum % 50 > 0) {
+         guard++;
+     }
+     var medic = Math.floor(stuNum / 100);
+     if(stuNum % 100 > 0) {
+         medic++;
+     }
+    document.getElementById('calcmsg').textContent = `כמות החובשים שצריך היא ${medic}, כמות המאבטחים שצריך היא ${guard} וכמות ערכות העזרה ראשונה היא ${firstAidKit}`;
 }
